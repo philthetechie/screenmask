@@ -14,6 +14,8 @@ This is built based on  the following setup:
 
 This is wired for roller motors that have 2 independant wiring loops. one for each direction. 
 
+### This relies on the motors having top and bottom limit switches built in to avoid overrun!!
+
 The idea with the relay layout here is that the main power relays are set to an Open (off) state until the direction relays have been set correctly, and then the Main power relays are Closed (turned on) for the duration of the roll. This - in theory - avoids multiple power lines having power at the same time. I assume that would be bad. 
 
 

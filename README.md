@@ -1,5 +1,5 @@
 # Masking system driver code.
-This is cnc code for a raspberry pi controlled relay system, for driving fixed state 240v garage door rollers on a timed basis. this was built many moons ago for a friend who wanted to automate their Cinema screen masking. See https://www.avforums.com/threads/diy-electric-projector-masking.2086836/?fbclid=IwAR1m945RwJg0bJdvYfplcnb-2gT7ogpnFexECx8goUWyeocGzu9guOiJHXg
+This is cnc code for a raspberry pi controlled relay system, for driving 240v garage door rollers on a timed basis. this was built many moons ago for a friend who wanted to automate their cinema screen masking. See https://www.avforums.com/threads/diy-electric-projector-masking.2086836/?fbclid=IwAR1m945RwJg0bJdvYfplcnb-2gT7ogpnFexECx8goUWyeocGzu9guOiJHXg
 
 
 # Disclaimer:

@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css">
+<script src="/static/jquery-3.1.1.min.js"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/app.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/app.css">
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+        <a href="/"><h1>Home Cinema Masking Control</h1></a>    
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12">
+        <h3>New Program</h3>    
+            <a href="/new_program">Create a new program</a>
+        </div>
+    </div>            
+    
+    <div class="row">
+        <div class="col-xs-12">
+        <h3>Delete Program</h3>    
+        {{#programs}}
+            <form method="post" onsubmit="return confirm('Do you really want to delete {{identifier}}?');">
+                <input type="hidden" name="action" value="delete">
+                <input type="hidden" name="program_id" value="{{id}}">
+                <button class="btn btn-blue" ><span class="glyphicon glyphicon-trash"></span> {{identifier}}</button>
+            </form>
+        {{/programs}}
+        </div>
+    </div>            
+
+    
+</div>
+
+</html>

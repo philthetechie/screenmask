@@ -1,0 +1,52 @@
+
+body{
+    color:#dddddd;
+    background-color:#222222;
+}
+
+
+.btn-blue { 
+  color: #ffffff; 
+  background-color: #743DBD; 
+  border-color: #130269; 
+} 
+ 
+.btn-blue:hover, 
+.btn-blue:focus, 
+.btn-blue:active, 
+.btn-blue.active, 
+.open .dropdown-toggle.btn-blue { 
+  color: #ffffff; 
+  background-color: #2E1969; 
+  border-color: #130269; 
+} 
+ 
+.btn-blue:active, 
+.btn-blue.active, 
+.open .dropdown-toggle.btn-blue { 
+  background-image: none; 
+} 
+ 
+.btn-blue.disabled, 
+.btn-blue[disabled], 
+fieldset[disabled] .btn-blue, 
+.btn-blue.disabled:hover, 
+.btn-blue[disabled]:hover, 
+fieldset[disabled] .btn-blue:hover, 
+.btn-blue.disabled:focus, 
+.btn-blue[disabled]:focus, 
+fieldset[disabled] .btn-blue:focus, 
+.btn-blue.disabled:active, 
+.btn-blue[disabled]:active, 
+fieldset[disabled] .btn-blue:active, 
+.btn-blue.disabled.active, 
+.btn-blue[disabled].active, 
+fieldset[disabled] .btn-blue.active { 
+  background-color: #743DBD; 
+  border-color: #130269; 
+} 
+ 
+.btn-blue .badge { 
+  color: #743DBD; 
+  background-color: #ffffff; 
+}

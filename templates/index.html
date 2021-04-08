@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css">
+<script src="/static/jquery-3.1.1.min.js"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/app.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/app.css">
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+        <a href="/"><h1>Home Cinema Masking Control</h1></a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12">
+        <h3>Run Program</h3>    
+        {{#programs}}
+            <form method="post">
+                <input type="hidden" name="action" value="run_cycle">
+                <input type="hidden" name="program_id" value="{{id}}">
+                <button type="button" class="btn btn-blue runprogram"  data-program_id="{{id}}"><span class="glyphicon glyphicon-play-circle"></span> {{identifier}}</button>
+            </form>
+        {{/programs}}
+        </div>
+    </div>    
+ 
+ <div class="row">
+        <div class="col-xs-12">
+        <h3>Open Masking</h3>    
+            <a href="/reset">Open</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+        <h3>Manual Control</h3>    
+            <a href="/manual_control">Manual Control</a>
+        </div>
+    </div>    
+
+    
+    <div class="row">
+        <div class="col-xs-12">
+        <h3>Settings</h3>    
+            <a href="/settings">Change settings</a>
+        </div>
+    </div>            
+            
+</div>
+
+</html>
